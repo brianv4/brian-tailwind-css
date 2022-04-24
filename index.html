@@ -6,10 +6,13 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link href="dist/output.css" rel="stylesheet" />
+
     <!-- Google Fonts -->
     <style>
         @import url("https://fonts.googleapis.com/css2?family=Fira+Code:wght@300&family=Poppins:wght@400;500&family=Ubuntu:wght@300;700&display=swap");
     </style>
+
+    <!-- DARK MODE -->
     <script>
         if (localStorage.theme === "dark" || (!("theme" in localStorage) && window.matchMedia("(prefers-color-scheme: dark)").matches)) {
             document.documentElement.classList.add("dark");
@@ -17,6 +20,7 @@
             document.documentElement.classList.remove("dark");
         }
     </script>
+
     <title>Brian Vidyanjaya Tailwind CSS</title>
 </head>
 
@@ -80,7 +84,7 @@
         <div class="container">
             <div class="flex flex-wrap">
                 <div class="w-full self-center px-4 lg:w-1/2">
-                    <h1 class="text-base font-semibold text-primary md:text-xl">Halo Semua 🖐, saya<span class="mt-1 block text-4xl font-bold text-dark dark:text-white lg:text-5xl">Brian Vidyanjaya</span></h1>
+                    <h1 class="text-base font-semibold text-primary md:text-xl">Halo Semua 🖐, saya<span class="lead mt-1 block text-4xl font-bold text-dark dark:text-white lg:text-5xl"></span></h1>
                     <h2 class="mb-5 text-lg font-medium text-slate-500 lg:text-2xl">Mahasiswa <span class="text-dark dark:text-white">Teknik Informatika</span></h2>
                     <p class="mb-10 font-medium leading-relaxed text-slate-400">Menjadi front end web sangat menyenangkan bukan. <span class="font-bold text-dark dark:text-white">bukan!</span></p>
 
@@ -167,31 +171,45 @@
             <div class="flex w-full flex-wrap justify-center px-4 xl:mx-auto xl:w-10/12">
                 <div class="mb-12 p-4 md:w-1/2">
                     <div class="overflow-hidden rounded-md shadow-md">
-                        <img src="dist/img/portfolio/1.png" alt="Landing Page" class="w-full" />
+                        <a href="http://brian-bootstrap5.srirejeki.net/" class="hover:text-primary">
+                            <img src="dist/img/portfolio/1.png" alt="Landing Page" class="w-full" />
+                        </a>
                     </div>
-                    <h3 class="mt-5 mb-3 text-xl font-semibold text-dark dark:text-white">Landing Page Brian Vidyanjaya</h3>
-                    <p class="text-base font-medium text-secondary">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quisquam numquam aperiam tempora quia incidunt rem.</p>
+                    <h3 class="mt-5 mb-3 text-xl font-semibold text-dark dark:text-white">
+                        <a href="https://brian.srirejeki.net/" class="hover:text-primary">Portofolio Bootstrap 5</a>
+                    </h3>
+                    <p class="text-base font-medium text-secondary">Brian Vidyanjaya Portofolio is made using Framework Bootstrap 5.</p>
                 </div>
                 <div class="mb-12 p-4 md:w-1/2">
                     <div class="overflow-hidden rounded-md shadow-md">
-                        <img src="dist/img/portfolio/2.png" alt="Landing Page" class="w-full" />
+                        <a href="https://brian.srirejeki.net/" class="hover:text-primary">
+                            <img src="dist/img/portfolio/2.png" alt="Landing Page" class="w-full" />
+                        </a>
                     </div>
-                    <h3 class="mt-5 mb-3 text-xl font-semibold text-dark dark:text-white">Landing Page Brian Vidyanjaya</h3>
-                    <p class="text-base font-medium text-secondary">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quisquam numquam aperiam tempora quia incidunt rem.</p>
+                    <h3 class="mt-5 mb-3 text-xl font-semibold text-dark dark:text-white"><a href="https://brian.srirejeki.net/" class="hover:text-primary">Portofolio HTML CSS</a></h3>
+                    <p class="text-base font-medium text-secondary">Brian Vidyanjaya Portofolio is made using HTML &.</p>
                 </div>
                 <div class="mb-12 p-4 md:w-1/2">
                     <div class="overflow-hidden rounded-md shadow-md">
-                        <img src="dist/img/portfolio/3.png" alt="Landing Page" class="w-full" />
+                        <a href="http://svcc.srirejeki.net/" class="hover:text-primary">
+                            <img src="dist/img/portfolio/3.png" alt="Landing Page" class="w-full" />
+                        </a>
                     </div>
-                    <h3 class="mt-5 mb-3 text-xl font-semibold text-dark dark:text-white">Landing Page Brian Vidyanjaya</h3>
-                    <p class="text-base font-medium text-secondary">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quisquam numquam aperiam tempora quia incidunt rem.</p>
+                    <h3 class="mt-5 mb-3 text-xl font-semibold text-dark dark:text-white">
+                        <a href="http://svcc.srirejeki.net/" class="hover:text-primary">Landing Page SVCC</a>
+                    </h3>
+                    <p class="text-base font-medium text-secondary">SVCC tribe 5 website at Telkom Indonesia.</p>
                 </div>
                 <div class="mb-12 p-4 md:w-1/2">
                     <div class="overflow-hidden rounded-md shadow-md">
-                        <img src="dist/img/portfolio/4.png" alt="Landing Page" class="w-full" />
+                        <a href="https://brian.srirejeki.net/" class="hover:text-primary">
+                            <img src="dist/img/portfolio/8.png" alt="Landing Page" class="w-full" />
+                        </a>
                     </div>
-                    <h3 class="mt-5 mb-3 text-xl font-semibold text-dark dark:text-white">Landing Page Brian Vidyanjaya</h3>
-                    <p class="text-base font-medium text-secondary">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quisquam numquam aperiam tempora quia incidunt rem.</p>
+                    <h3 class="mt-5 mb-3 text-xl font-semibold text-dark dark:text-white">
+                        <a href="http://cutthewood.srirejeki.net/" class="hover:text-primary">Cut The Wood - Hyper Casual Games</a>
+                    </h3>
+                    <p class="text-base font-medium text-secondary">Games Hyper Casual Single Tap made using Construct 3.</p>
                 </div>
             </div>
         </div>
@@ -398,7 +416,7 @@
                 </div>
                 <p class="text-center text-xs font-medium text-slate-500">
                     Created from <span class="text-red-700">❤</span> by <a href="https://www.instagram.com/vidyanjaya/" target="_blank" class="font-bold text-primary">Brian Vidyanjaya</a> using
-                    <a href="https://tailwindcss.com/" target="_blank" class="font-bold text-sky-500">Tailwind CSS</a>
+                    <a href="https://tailwindcss.com/" target="_blank" class="font-bold text-sky-500" data-aos="fade-right">Tailwind CSS</a>
                 </p>
             </div>
         </div>
@@ -412,6 +430,20 @@
     <!-- Back to Top End -->
 
     <script src="dist/js/script.js"></script>
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+
+    <!-- GSAP -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.9.1/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.9.1/TextPlugin.min.js"></script>
+    <script>
+        //gsap
+        gsap.registerPlugin(TextPlugin);
+        gsap.to(".lead", {
+            duration: 3,
+            delay: 1,
+            text: "Brian Vidyanjaya",
+        });
+    </script>
 </body>
 
 </html>
